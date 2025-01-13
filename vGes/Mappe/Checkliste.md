@@ -1,0 +1,53 @@
+# Checkliste für Abgabe in Gruppe C
+
+-   [ ] Aufgabe 1:
+    -   [ ] Hausaufgabe Texturen (Sammeln) 3x3 -> auch rein? !!Frage
+    -   [ ] Aufgabe 1.1 Figur Grund: alte Fotos ohne Plan - 5
+    -   [ ] Aufgabe 1.2 Figur Grund mit Gestaltungsprinzip - 5 Lösungen
+    -   [ ] Bildraster: 3 Gestaltungen mit jeweils 6-9 Texturen
+-   [ ] Aufgabe 2: Punkt und Fläche
+    -   [ ] Punkt und Quadratische Fläche - 6
+    -   [ ] Punkt wird zur Linie - 6
+    -   [ ] großer und kleiner Punkt - 6
+    -   [ ] kleine punkte - 6
+    -   [ ] visualisierung - 2x4
+    -   [ ] Komposition - 6
+    -   [ ] Komposition - 6
+    -   [ ] Komposition - 6
+-   [ ] Aufgabe 2: Visualisierung
+    -   [ ] Blöcke -> einkleben oder abdrucken ?
+-   [ ] Aufgabe 2: Anwendung Musikcover
+    -   [ ] Anwendung Musikcover
+-   [ ] Aufgabe 3: Farbe (Bei allen Farben CMYK mit drunter)
+    -   [ ] Reine Farben - 3
+    -   [ ] Komplementärfarben - 3
+    -   [ ] Modulation - 3
+    -   [ ] Pastellfarben - 3
+    -   [ ] Simultankontrast - 3
+    -   [ ] Farben zur Freien Auswahl - 3 -> Gestaltung aus den Farben(frei, kreativ)
+    -   [ ] Anwendungen
+        -   [ ] Farbgestaltung im Raum (Aka Gestaltung könnte in Arztpraxis etc. hängen)
+        -   [ ] Buch-Cover
+        -   [ ] Bonbondose
+-   [ ] Aufgabe 4: Text und Bild
+    -   [ ] Fläche Quadratisch - 3 - schwarz/weiß
+    -   [ ] Fläche A4 quer - 3 - schwarz/weiß
+    -   [ ] Fläche A4 hoch Doppelseite - 3 - schwarz/weiß
+    -   [ ] Doppelseite - 3 - Farbe
+    -   [ ] Doppelseite Text und Bildraster 1 - Farbe(Hintergrundfarben möglich)
+-   [ ] Aufgabe 5: Signet-entwicklung
+    -   [ ] Kreisfläche Schwarz (Schere) - einkleben oder Foto? - nachdesignen? - 9
+    -   [ ] 2 Kreisfläche Schwarz Pinsel - 9
+    -   [ ] Kreisfläche schwarz und weiß - 9
+    -   [ ] Kreis und Quadrat - 9
+    -   [ ] Kreis und Dreieck - 9
+    -   [ ] Anwendung:
+        -   [ ] Reinzeichnung als SVG
+        -   [ ] Logo mit ergänztem Firmennamen
+        -   [ ] Visitenkarte
+        -   [ ] Briefpapier
+        -   [ ] PKW oder LKW
+    -   [ ] Yukigassen
+        -   [ ] Ideenskizzen - 9
+        -   [ ] Signets - 3
+        -   [ ] Reinzeichnung - 1
