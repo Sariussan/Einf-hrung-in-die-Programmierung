@@ -1,0 +1,471 @@
+{
+  "name": "Aufgabe 8.1",
+  "description": "",
+  "type": "TM",
+  "automaton": {
+    "acceptCache": [],
+    "simulationInput": [
+      "a",
+      "c",
+      "b",
+      "d"
+    ],
+    "Alphabet": [
+      "a",
+      "b",
+      "c",
+      "d"
+    ],
+    "StackAlphabet": [
+      "#",
+      "a",
+      "b",
+      "c",
+      "d",
+      "%"
+    ],
+    "States": [
+      {
+        "ID": 1,
+        "Name": "q0",
+        "x": 140,
+        "y": 300,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 1,
+            "Target": 2,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "a",
+                "%",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 1,
+            "Target": 1,
+            "x": -50,
+            "y": -130,
+            "Labels": [
+              [
+                "%",
+                "%",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 1,
+            "Target": 4,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "b",
+                "%",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 1,
+            "Target": 5,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "#",
+                "#",
+                "N"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 2,
+        "Name": "A",
+        "x": 330,
+        "y": 150,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 2,
+            "Target": 2,
+            "x": 0,
+            "y": -150,
+            "Labels": [
+              [
+                "b",
+                "b",
+                "R"
+              ],
+              [
+                "a",
+                "a",
+                "R"
+              ],
+              [
+                "%",
+                "%",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 2,
+            "Target": 3,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "c",
+                "%",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 3,
+        "Name": "Rück",
+        "x": 530,
+        "y": 300,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 3,
+            "Target": 3,
+            "x": 80,
+            "y": -10,
+            "Labels": [
+              [
+                "a",
+                "a",
+                "L"
+              ],
+              [
+                "b",
+                "b",
+                "L"
+              ],
+              [
+                "%",
+                "%",
+                "L"
+              ]
+            ]
+          },
+          {
+            "Source": 3,
+            "Target": 1,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "#",
+                "#",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 4,
+        "Name": "B",
+        "x": 320,
+        "y": 460,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 4,
+            "Target": 4,
+            "x": 0,
+            "y": 30,
+            "Labels": [
+              [
+                "b",
+                "b",
+                "R"
+              ],
+              [
+                "%",
+                "%",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 4,
+            "Target": 3,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "d",
+                "%",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 5,
+        "Name": "Done",
+        "x": 180,
+        "y": 470,
+        "Final": true,
+        "Radius": 30,
+        "Transitions": [],
+        "Start": false
+      },
+      {
+        "ID": 6,
+        "Name": "Check",
+        "x": 110,
+        "y": 700,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 6,
+            "Target": 7,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "a",
+                "a",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": true
+      },
+      {
+        "ID": 7,
+        "Name": "A's",
+        "x": 230,
+        "y": 700,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 7,
+            "Target": 7,
+            "x": 0,
+            "y": 20,
+            "Labels": [
+              [
+                "a",
+                "a",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 7,
+            "Target": 8,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "b",
+                "b",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 8,
+        "Name": "B's",
+        "x": 360,
+        "y": 700,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 8,
+            "Target": 8,
+            "x": 0,
+            "y": 10,
+            "Labels": [
+              [
+                "b",
+                "b",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 8,
+            "Target": 9,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "c",
+                "c",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 9,
+        "Name": "C's",
+        "x": 490,
+        "y": 700,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 9,
+            "Target": 9,
+            "x": 0,
+            "y": 20,
+            "Labels": [
+              [
+                "c",
+                "c",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 9,
+            "Target": 10,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "d",
+                "d",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 10,
+        "Name": "D's",
+        "x": 620,
+        "y": 680,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 10,
+            "Target": 10,
+            "x": 0,
+            "y": 10,
+            "Labels": [
+              [
+                "d",
+                "d",
+                "R"
+              ]
+            ]
+          },
+          {
+            "Source": 10,
+            "Target": 11,
+            "x": -30,
+            "y": 0,
+            "Labels": [
+              [
+                "#",
+                "#",
+                "L"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      },
+      {
+        "ID": 11,
+        "Name": "zuStart",
+        "x": 110,
+        "y": 590,
+        "Final": false,
+        "Radius": 30,
+        "Transitions": [
+          {
+            "Source": 11,
+            "Target": 11,
+            "x": -70,
+            "y": -70,
+            "Labels": [
+              [
+                "a",
+                "a",
+                "L"
+              ],
+              [
+                "b",
+                "b",
+                "L"
+              ],
+              [
+                "c",
+                "c",
+                "L"
+              ],
+              [
+                "d",
+                "d",
+                "L"
+              ]
+            ]
+          },
+          {
+            "Source": 11,
+            "Target": 1,
+            "x": 0,
+            "y": 0,
+            "Labels": [
+              [
+                "#",
+                "#",
+                "R"
+              ]
+            ]
+          }
+        ],
+        "Start": false
+      }
+    ],
+    "lastInputs": [
+      [
+        "a",
+        "c",
+        "b",
+        "d"
+      ]
+    ]
+  }
+}

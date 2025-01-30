@@ -1,0 +1,207 @@
+{
+    "name": "a^nb^mc^nd^m",
+    "description": "",
+    "type": "TM",
+    "automaton": {
+        "acceptCache": [],
+        "simulationInput": ["a", "b", "b", "b", "c", "c", "d", "d", "d"],
+        "Alphabet": ["a", "b", "c", "d"],
+        "StackAlphabet": ["#", "a", "b", "c", "d", "%"],
+        "States": [
+            {
+                "ID": 1,
+                "Name": "A?",
+                "x": 150,
+                "y": 150,
+                "Final": false,
+                "Radius": 30,
+                "Transitions": [
+                    {
+                        "Source": 1,
+                        "Target": 2,
+                        "x": 0,
+                        "y": 0,
+                        "Labels": [["a", "%", "R"]]
+                    },
+                    {
+                        "Source": 1,
+                        "Target": 4,
+                        "x": -20,
+                        "y": 0,
+                        "Labels": [["b", "b", "N"]]
+                    },
+                    {
+                        "Source": 1,
+                        "Target": 1,
+                        "x": 0,
+                        "y": -150,
+                        "Labels": [["%", "%", "R"]]
+                    }
+                ],
+                "Start": true
+            },
+            {
+                "ID": 2,
+                "Name": "C?",
+                "x": 370,
+                "y": 150,
+                "Final": false,
+                "Radius": 30,
+                "Transitions": [
+                    {
+                        "Source": 2,
+                        "Target": 2,
+                        "x": 0,
+                        "y": -150,
+                        "Labels": [
+                            ["a", "a", "R"],
+                            ["b", "b", "R"],
+                            ["%", "%", "R"]
+                        ]
+                    },
+                    {
+                        "Source": 2,
+                        "Target": 3,
+                        "x": 40,
+                        "y": 0,
+                        "Labels": [["c", "%", "L"]]
+                    }
+                ],
+                "Start": false
+            },
+            {
+                "ID": 3,
+                "Name": "Rück a",
+                "x": 310,
+                "y": 350,
+                "Final": false,
+                "Radius": 30,
+                "Transitions": [
+                    {
+                        "Source": 3,
+                        "Target": 3,
+                        "x": 0,
+                        "y": -150,
+                        "Labels": [
+                            ["a", "a", "L"],
+                            ["b", "b", "L"],
+                            ["%", "%", "L"]
+                        ]
+                    },
+                    {
+                        "Source": 3,
+                        "Target": 1,
+                        "x": 0,
+                        "y": 0,
+                        "Labels": [["#", "#", "R"]]
+                    }
+                ],
+                "Start": false
+            },
+            {
+                "ID": 4,
+                "Name": "B?",
+                "x": 150,
+                "y": 450,
+                "Final": false,
+                "Radius": 30,
+                "Transitions": [
+                    {
+                        "Source": 4,
+                        "Target": 5,
+                        "x": 0,
+                        "y": 0,
+                        "Labels": [["b", "%", "R"]]
+                    },
+                    {
+                        "Source": 4,
+                        "Target": 7,
+                        "x": -20,
+                        "y": 0,
+                        "Labels": [["#", "#", "N"]]
+                    },
+                    {
+                        "Source": 4,
+                        "Target": 4,
+                        "x": -60,
+                        "y": -60,
+                        "Labels": [["%", "%", "R"]]
+                    }
+                ],
+                "Start": false
+            },
+            {
+                "ID": 5,
+                "Name": "D?",
+                "x": 340,
+                "y": 450,
+                "Final": false,
+                "Radius": 30,
+                "Transitions": [
+                    {
+                        "Source": 5,
+                        "Target": 5,
+                        "x": 110,
+                        "y": -110,
+                        "Labels": [
+                            ["b", "b", "R"],
+                            ["%", "%", "R"]
+                        ]
+                    },
+                    {
+                        "Source": 5,
+                        "Target": 6,
+                        "x": 40,
+                        "y": 10,
+                        "Labels": [["d", "%", "L"]]
+                    }
+                ],
+                "Start": false
+            },
+            {
+                "ID": 6,
+                "Name": "Rück b",
+                "x": 270,
+                "y": 600,
+                "Final": false,
+                "Radius": 30,
+                "Transitions": [
+                    {
+                        "Source": 6,
+                        "Target": 6,
+                        "x": 0,
+                        "y": -150,
+                        "Labels": [
+                            ["%", "%", "L"],
+                            ["b", "b", "L"]
+                        ]
+                    },
+                    {
+                        "Source": 6,
+                        "Target": 4,
+                        "x": 0,
+                        "y": 0,
+                        "Labels": [["#", "#", "R"]]
+                    }
+                ],
+                "Start": false
+            },
+            {
+                "ID": 7,
+                "Name": "Done",
+                "x": 150,
+                "y": 670,
+                "Final": true,
+                "Radius": 30,
+                "Transitions": [],
+                "Start": false
+            }
+        ],
+        "lastInputs": [
+            ["a", "b", "b", "b", "c", "c", "d", "d", "d"],
+            ["a", "a", "b", "b", "c", "d", "d", "d"],
+            ["a", "a", "b", "b", "b", "c", "d", "d", "d"],
+            ["a", "a", "b", "b", "b", "c", "c", "d", "d", "d"]
+        ]
+    }
+}
